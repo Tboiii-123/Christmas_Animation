@@ -1,0 +1,502 @@
+nav div div ul{
+    margin-left: 120px;
+    color: black;
+    
+}
+
+nav div div ul li {
+    padding-left: 50px;
+    
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+nav div div ul li:hover{
+    font-size: 40px;
+    color: rgb(0, 153, 255);    
+    text-shadow: 2px 2px 2px  2px solid red;
+    
+    
+}
+
+
+
+nav div a img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+@media(max-width:900px){
+    
+nav div div ul{
+    margin-left: 0px;
+}
+nav div div ul li {
+    padding-left: 0px;
+    
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+}
+
+.section1{
+    background-image: url('img/crist2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+
+.section1 .inner #text-output{
+    margin-top: 100px;
+    font-size: 60px;
+    font-family:cursive;
+text-align: center;
+
+}
+
+.section1 .inner aside{
+    margin-top: 100px;
+    margin-left: 20%;
+
+    display: flex;
+    justify-content: center;
+}
+.section1 .inner aside div a img{
+    width: 60%;
+
+}
+
+.section1 .inner aside div a img:hover{
+    width: 65%;
+    transition: 2s;
+        
+}
+
+
+@media(max-width:700px){
+  .section1{
+    background-image: url('img/crist2.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 990px;
+}
+
+  .section1 .inner aside{
+    margin-top: 10px;
+    margin-left: 0%;
+  margin-left: 10%;
+    display: block;  
+}
+
+.section1 .inner aside div a img{
+  width: 70%;
+  margin-top: 50px;
+  
+  
+    
+
+}
+
+  
+}
+
+
+#delayedImage {
+    
+    opacity: 0;
+  
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out; /
+
+  }
+  
+#delayedImage2 {
+    
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out; /
+
+    
+  }
+  
+  #delayedImage.visible {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  #delayedImage2.visible {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  
+/* Section 2 */
+
+  .section2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+  }
+
+  .section2 .hid div a img{
+    border-radius: 30%;
+  }
+
+  .section2 .hid{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+.section2 .hid .img a img{
+        width: 80%;
+}
+
+.section2 .hid .img a img:hover{
+        width: 85%;
+        transition: 2s;
+        box-shadow: 0 35px 30px rgba(18, 17, 17, 0.4); /* Enhance shadow on hover */
+  
+}
+
+  .section2 .hid .text{
+    margin-top: 40px;
+    width: 30%;
+    text-align: center;
+  }
+
+
+  .section2 .hid .text .about{
+    font-size: 30px;
+    font-family: cursive;
+  }
+  .section2 .hid .text p{
+    font-size: 22px;
+  }
+
+  @media(max-width:700px){
+
+    .section2 .hid{
+      display: block;
+      
+    }
+    .section2 .hid .text{
+      margin-top: 40px;
+      width: 100%;
+      text-align: center;
+    }
+    
+  
+  }
+  
+  .section2 .hid .text button{
+    margin-left: 7px;
+    padding: 13px 40px;
+    border-radius: 30px;
+
+    border: none;
+    background-color: green;
+    color: white;
+    
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds the floating shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 3s infinite ease-in-out; /* Float animation */
+  }
+
+
+  .section2 .hid .text button:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 35px 30px rgba(18, 17, 17, 0.4); /* Enhance shadow on hover */
+  
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Default position */
+    }
+    50% {
+      transform: translateY(-10px); /* Moves up slightly */
+    }
+  }
+/* Ends Here */
+
+
+
+
+
+
+
+/* Section3 styling */
+
+.section3{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  
+  margin-bottom: 250px;
+    
+ 
+}
+
+.section3 .inner{
+  margin-top: 50px;
+  margin-left: 1%;
+
+  padding: 60px 42px;
+  box-shadow:1px 1px 30px black;
+
+  cursor: pointer;           
+}
+
+.inner:nth-child(2){
+  transition-delay: 300ms;
+
+}
+.inner:nth-child(3){
+  transition-delay: 500ms;
+  
+
+}
+
+
+/* To center an img in a container */
+
+.section3 .inner img{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.section3 .inner :hover{
+
+font-size: 23px;
+
+}
+
+
+.section3 .inner #member{
+  font-size: 20px;
+
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+.section3 .inner p{
+  text-align: center;
+  
+}
+
+@media(max-width:700px){
+  .section3{
+      display:block;
+      
+  }    
+  .section3 .inner{
+      margin-top: 50px;
+      
+      padding: 10px 22px;
+      box-shadow:1px 1px 30px black;
+      width: 70%;
+      margin-left: 10%;
+              
+  }
+  
+
+}
+
+/* Ends Here */
+
+
+
+
+
+
+
+
+
+/* Section 4 */
+
+.section4{
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
+.section4 .hid div a img{
+  border-radius: 70%;
+}
+
+.section4 .hid{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.section4 .hid .img a img{
+      width: 80%;
+}
+
+
+.section4 .hid .img a img:hover{
+      width: 85%;
+      transition: 2s;
+      box-shadow: 0 35px 30px rgba(18, 17, 17, 0.4); /* Enhance shadow on hover */
+
+}
+
+.section4 .hid .text{
+  margin-top: 40px;
+  width: 30%;
+  text-align: center;
+}
+
+
+.section4 .hid .text .about{
+  font-size: 30px;
+  font-family: cursive;
+}
+.section4 .hid .text p{
+  font-size: 22px;
+}
+
+@media(max-width:700px){
+
+  .section4 .hid{
+    display: block;
+    
+  }
+  .section4 .hid .text{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .section4 .hid .img a img{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 2%;
+}
+
+
+}
+
+.section4 .hid .text button{
+  margin-left: 7px;
+  padding: 13px 40px;
+  border-radius: 30px;
+
+  border: none;
+  background-color: rgb(178, 135, 26);
+  color: white;
+  
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds the floating shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 3s infinite ease-in-out; /* Float animation */
+}
+
+
+.section4 .hid .text button:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 35px 30px rgba(18, 17, 17, 0.4); /* Enhance shadow on hover */
+
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Default position */
+  }
+  50% {
+    transform: translateY(-10px); /* Moves up slightly */
+  }
+}
+/* Ends Here */
+
+
+
+
+
+
+.hid{
+    
+    opacity: 0;
+    
+    filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 4s;
+    
+}
+.hidden{
+
+    opacity: 0;
+    min-height: 75vh;
+    filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 4s;            
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+            filter: blur(0);
+        
+            
+}
+/* 
+@media(max-width:700px){
+    
+.hid{
+    
+    opacity: none;
+    
+    filter: none;
+            transform:none;
+            transition: none;
+
+    
+}
+.hidden{
+
+    opacity: none;
+    
+    filter: none;
+            transform:none;
+            transition: none;
+                   
+}
+.show{
+
+        
+    opacity: none;
+    
+    filter: none;
+            transform:none;
+            
+}
+
+} */
+
+
+/* Footer */
+
+footer p{
+  margin-top: 100px;
+  font-size: 20px;
+  font-family: cursive;
+  text-align: center;
+}
+
+/* Ends Here */
